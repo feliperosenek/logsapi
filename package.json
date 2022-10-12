@@ -1,0 +1,26 @@
+{
+  "name": "logsapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feliperosenek/logsapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feliperosenek/logsapi/issues"
+  },
+  "homepage": "https://github.com/feliperosenek/logsapi#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.20",
+    "socketio": "^1.0.0"
+  }
+}

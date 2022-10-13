@@ -17,8 +17,9 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
     var data = req.body
+    var datetime = new Date();
     console.log(data)
-    io.emit('log', data.message);      
+    io.emit('log', data);      
  
     res.send('ok')
 });

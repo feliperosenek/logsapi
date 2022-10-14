@@ -37,7 +37,7 @@
   var socket = io();
 
       var messages = document.getElementById('messages');
-      var time = new Date();
+ 
 
   socket.on('log', function(msg) {
     var tr = document.createElement('tr');
@@ -45,11 +45,14 @@
     var td2 = document.createElement('td'); 
     var td3 = document.createElement('td'); 
     var td4 = document.createElement('td');
+
+    var timedate = msg.timedate
  
     td.textContent = msg.message;
     td2.textContent = msg.logtype
     td3.textContent = msg.pipe;
-    td4.textContent =  msg.timedate   
+    td4.textContent =  timedate
+    console.log(timedate)   
     messages.appendChild(tr);
     tr.appendChild(td);
     tr.appendChild(td2);

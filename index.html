@@ -47,6 +47,12 @@
     var td4 = document.createElement('td');
 
     var timedate = msg.timedate
+    timedate = timedate.split('T')
+    var date = timedate[0]
+    var hour = timedate[1].split('.')
+    hour = hour[0]
+
+    timedate = date+" - "+hour
  
     td.textContent = msg.message;
     td2.textContent = msg.logtype

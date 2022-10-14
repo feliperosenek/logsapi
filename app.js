@@ -5,6 +5,7 @@ const server = http.createServer(app);
 const  Server  = require("socket.io");
 const io = new Server(server);
 
+
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
@@ -16,8 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    var data = req.body
-    var datetime = new Date();
+    var data = req.body     
     console.log(data)
     io.emit('log', data);      
  

@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/pipefyimporter', (req, res) => {
+  res.sendFile(__dirname + '/index2.html');
+});
+
 app.post('/', (req, res) => {
     var data = req.body     
     console.log(data)

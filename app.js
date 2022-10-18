@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/pipefyimporter', (req, res) => {
-  res.sendFile(__dirname + '/index2.html');
+  res.sendFile(__dirname + '/index2.html')
 });
 
 app.post('/', (req, res) => {
